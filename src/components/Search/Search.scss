@@ -1,0 +1,10 @@
+.app-search {
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4 !important;
+
+  &--focused {
+    background-color: #ffffff !important;
+  }
+}

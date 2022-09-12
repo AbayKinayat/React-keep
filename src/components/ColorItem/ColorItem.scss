@@ -1,0 +1,34 @@
+.color-item {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #000 !important;
+  }
+
+  &__select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: #a142f4;
+    border-radius: 50%;
+  }
+
+  &--bordered {
+    border: 2px solid #000 !important;
+  }
+}
+
+.color-item--active {
+  border: 2px solid #a142f4 !important;
+}

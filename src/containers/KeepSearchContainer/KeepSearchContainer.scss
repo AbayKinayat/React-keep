@@ -1,0 +1,19 @@
+.keep-search-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  padding-top: 20px;
+  transform: translateY(20%);
+  transition: .2s ease;
+
+  &--visible {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Toolbar from "@mui/material/Toolbar";
+
+import { Home } from './pages';
+import { AppHeader, AppSidebar, KeepSearchContainer } from './containers';
+import AppSidebarContext from './store/AppSidebarContext';
+import { routes } from './routes';
 import './App.css';
 
 function App() {
+  const { sidebarWidth } = useContext(AppSidebarContext);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      {/* Шапка */}
+      <AppHeader />
+      {/* Сайдбар */}
+      <AppSidebar />
+      <Toolbar />
+      {/* Контейнер поиска заметок */}
+      <KeepSearchContainer />
+      <div
+        style={{
+          height: "100%",
+          transition: ".3s",
+          paddingLeft: sidebarWidth + 100
+        }}
+      >
+        <Routes>
+          <Route path={routes.home.path} element={<Home />} />
+        </Routes>
+      </div>
+    </div >
   );
 }
 

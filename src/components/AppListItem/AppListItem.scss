@@ -1,0 +1,39 @@
+.app-list-item {
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    color: inherit;
+    text-decoration: inherit;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 0 25px 25px 0;
+    overflow: hidden;
+    transition: .3s;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+
+    &.active {
+      background: #feefc3;
+    }
+
+  }
+
+  &__icon {
+    padding: 0 12px;
+    user-select: none;
+  }
+
+  &__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    user-select: none;
+    margin-left: 20px;
+  }
+}

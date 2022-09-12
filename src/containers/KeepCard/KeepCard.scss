@@ -1,0 +1,17 @@
+.keep-card {
+  $self: &;
+  &__actions {
+    opacity: 0;
+    transition: .5s;
+  }
+
+  &:hover {
+    #{$self}__actions {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.hightlight {
+  background-color: yellow;
+}
