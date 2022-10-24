@@ -3,7 +3,7 @@ import { List, Drawer, Toolbar } from '@mui/material';
 import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
 
 import { AppListItem } from '../../components';
-import AppSidebarContext from '../../store/AppSidebarContext';
+import AppSidebarContext from '../../store/app-sidabar.context';
 import { routes } from '../../routes';
 
 // Сайдбар

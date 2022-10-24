@@ -1,12 +1,12 @@
 import React, { useMemo } from 'react';
 import { Card, Typography, CardContent, CardActionArea, CardActions } from "@mui/material";
 
-import KeepImageList from '../KeepImageList';
-import KeepCardActions from '../KeepCardActions';
+import KeepImageList from '../keep-image-list/keep-image-list.component';
+import KeepCardActions from '../keep-card-actions/keep-card-actions.component';
 import type { Keep } from '../../models'
-import { generateUid } from '../../helpers/generateId';
-import { replaceKeep } from '../../helpers/replaceKeep';
-import "./KeepCard.scss";
+import { generateUid } from '../../helpers/generate-id';
+import { replaceKeep } from '../../helpers/replace-keep';
+import "./keep-card.styles.scss";
 
 interface KeepCardProps {
   keep: Keep,

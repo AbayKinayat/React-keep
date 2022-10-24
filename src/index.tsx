@@ -4,10 +4,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from "./plugins/mui.plugin";
 
-import App from './App';
-import { AppSidebarProvider } from './store/AppSidebarContext';
+import App from './app';
+import { AppSidebarProvider } from './store/app-sidabar.context';
 import './index.css';
-import KeepContextProvider from './store/KeepContext';
+import KeepContextProvider from './store/keep.context';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

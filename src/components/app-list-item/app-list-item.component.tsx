@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import "./AppListItem.scss";
+import "./app-list-item.styles.scss";
 
 interface AppListItemProps {
   text: string,

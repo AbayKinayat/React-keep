@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Paper, InputBase, Box, Button } from "@mui/material";
 
-import { KeepColorsSetting, KeepImagesSetting, KeepImageList } from '../';
+import { KeepColorsSetting, KeepImagesSetting, KeepImageList } from '..';
 import { useKeep, useKeepCreate } from '../../hooks';
-import "./KeepCreate.scss";
+import "./keep-create.styles.scss";
 
 const keepBackgroundSettingId = "keep-background-setting";
 const keepImageSettingId = "keep-image-setting";

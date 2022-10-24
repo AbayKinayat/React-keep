@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { KeepContext } from "../../store/KeepContext";
+import { KeepContext } from "../../store/keep.context";
 import type { Keep } from "../../models";
 
 // Хук редактирование заметки

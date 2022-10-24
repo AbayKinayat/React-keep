@@ -1,6 +1,6 @@
 import { useState, } from "react";
 
-import { generateUid } from "../../helpers/generateId";
+import { generateUid } from "../../helpers/generate-id";
 import type { KeepImage } from "../../models/Keep";
 
 // Хук заметки

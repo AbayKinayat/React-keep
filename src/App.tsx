@@ -4,9 +4,9 @@ import Toolbar from "@mui/material/Toolbar";
 
 import { Home } from './pages';
 import { AppHeader, AppSidebar, KeepSearchContainer } from './containers';
-import AppSidebarContext from './store/AppSidebarContext';
+import AppSidebarContext from './store/app-sidabar.context';
 import { routes } from './routes';
-import './App.css';
+import './app.css';
 
 function App() {
   const { sidebarWidth } = useContext(AppSidebarContext);

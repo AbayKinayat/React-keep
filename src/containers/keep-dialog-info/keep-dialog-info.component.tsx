@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Button, Dialog, DialogContent, DialogTitle, InputBase } from '@mui/material'
 
-import KeepColorsSetting from '../KeepColorsSetting'
-import KeepImagesSetting from '../KeepImagesSetting'
-import KeepImageList from '../KeepImageList'
+import KeepColorsSetting from '../keep-colors-settings/keep-colors-settings.component'
+import KeepImagesSetting from '../keep-images-setting/keep-images-setting.component';
+import KeepImageList from '../keep-image-list/keep-image-list.component'
 import type { Keep } from '../../models'
 import { useKeep, useKeepUpdate } from '../../hooks'
 

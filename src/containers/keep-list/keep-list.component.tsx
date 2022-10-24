@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Grid } from '@mui/material';
 
 import type { Keep } from '../../models';
-import { KeepCard } from '../';
+import { KeepCard } from '..';
 
 interface KeepListProps {
   keeps: Keep[],

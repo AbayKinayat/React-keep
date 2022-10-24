@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Box from "@mui/material/Box";
 import CheckOutlinedIcon from '@mui/icons-material/CheckOutlined';
 
-import "./ColorItem.scss";
+import "./color-item.styles.scss";
 
 interface ColorItemProps {
   title: string;

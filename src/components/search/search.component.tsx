@@ -4,7 +4,7 @@ import classNames from "classnames";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 
-import "./Search.scss";
+import "./search.styles.scss";
 
 interface SearchProps {
   placeholder?: string,

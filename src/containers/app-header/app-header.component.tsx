@@ -3,8 +3,8 @@ import { AppBar, Box, Button, IconButton, Toolbar, Typography } from '@mui/mater
 import MenuIcon from '@mui/icons-material/Menu'
 ;
 import { Search } from '../../components';
-import AppSidebarContext from '../../store/AppSidebarContext';
-import { KeepContext } from '../../store/KeepContext';
+import AppSidebarContext from '../../store/app-sidabar.context';
+import { KeepContext } from '../../store/keep.context';
 
 const AppHeader: React.FC = () => {
   const { openSidebar, closeSidebar, isOpen } = useContext(AppSidebarContext);

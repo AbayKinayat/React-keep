@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Box } from '@mui/material';
 
 import { KeepColorsSetting, KeepImagesSetting } from '..';
-import { generateUid } from '../../helpers/generateId';
+import { generateUid } from '../../helpers/generate-id';
 import type { Keep } from '../../models';
 
 interface KeepCardActionsProps {

@@ -1,7 +1,7 @@
 import { Keep } from "../../models";
-import { generateUid } from "../../helpers/generateId";
+import { generateUid } from "../../helpers/generate-id";
 import { useContext } from "react";
-import { KeepContext } from "../../store/KeepContext";
+import { KeepContext } from "../../store/keep.context";
 
 // Хук создание заметки
 const useKeepCreate = ({ keep, onCreate = () => { } }: { keep: Omit<Keep, "id">, onCreate?: () => void }) => {
